@@ -390,7 +390,7 @@ class NetworkInferenceTE(NetworkInference):
         self.settings.setdefault("add_conditionals", None)
         self.settings.setdefault("tau_target", 1)
         self.settings.setdefault("tau_sources", 1)
-        #self.settings.setdefault("local_values", False)
+        self.settings.setdefault("local_values", False)
 
         # Check lags and taus for multivariate embedding.
         if "max_lag_sources" not in self.settings:
