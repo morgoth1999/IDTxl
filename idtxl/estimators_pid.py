@@ -112,7 +112,7 @@ class SydneyPID(Estimator):
         self.settings = settings.copy()
         self.settings.setdefault("verbose", False)
 
-    def is_parallel():
+    def is_parallel(self):
         return False
 
     def is_analytic_null_estimator(self):
@@ -514,7 +514,7 @@ class TartuPID(Estimator):
         self.settings.setdefault("cone_solver", "ECOS")
         self.settings.setdefault("solver_args", {"keep_solver_object": False})
 
-    def is_parallel():
+    def is_parallel(self):
         return False
 
     def is_analytic_null_estimator(self):
