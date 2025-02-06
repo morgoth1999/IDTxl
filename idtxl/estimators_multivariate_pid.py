@@ -50,7 +50,7 @@ class SxPID(Estimator):
         self.settings = settings.copy()
         self.settings.setdefault("verbose", False)
 
-    def is_parallel():
+    def is_parallel(self):
         return False
 
     def is_analytic_null_estimator(self):
